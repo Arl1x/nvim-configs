@@ -1,0 +1,36 @@
+local ok, ts = pcall(require, "nvim-treesitter.configs")
+if not ok then return end
+
+ts.setup({
+    ensure_installed = {
+        "bash",
+        "css",
+        "dockerfile",
+        "git_config",
+        "git_rebase",
+        "gitattributes",
+        "gitcommit",
+        "gitignore",
+        "html",
+        "http",
+        "java",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "nginx",
+        "passwd",
+        "php",
+        "python",
+        "sql",
+        "ssh_config",
+        "tmux",
+        "vim",
+        "vimdoc",
+        "xml",
+        "yaml",
+    },
+    highlight = { enable = true },
+    indent = { enable = true },
+})
